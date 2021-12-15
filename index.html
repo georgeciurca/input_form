@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>HTML Forms</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <form action="/" method="GET">
-        <label for="username">Your Name</label>
-        <input type="text" name="user-name" id="username">
-        <label for="useremail">Your email address</label>
-        <input type="email" name="user-email" id="useremail">
-        <button>Submit</button>
-    </form>
-</body>
+      <label for="username">Your Name</label>
+      <input type="text" name="user-name" id="username" />
 
-</html> 
+      <label for="usermessage">Your message</label>
+      <textarea
+        name="user.message"
+        id="usermessage"
+        cols="10"
+        rows="5"
+      ></textarea>
+
+      <label for="useremail">Your email address</label>
+      <input type="email" name="user-email" id="useremail" />
+      <label for="userage">Your Age</label>
+      <input type="number" id="userage" name="user-age" />
+      <label for="userpassword">Your password</label>
+      <input type="password" id="userpassword" name="user-password" />
+      <label for="birthdate">Your birthdate</label>
+      <input type="date" id="birthdate" name="user-birthdate" />
+      <hr />
+      <label for="favourite-color">Your favourite color?</label>
+      <select name="favourite-color" id="favourite-color">
+        <option value="">Blue</option>
+        <option value="">Red</option>
+        <option value="">Yellow</option>
+      </select>
+
+      <h2>How should we verify your account?</h2>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="sms" value="sms" />
+        <label for="sms">Via text message (SMS)</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="call" value="call" />
+        <label for="call">Via a phone call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="email" value="email" />
+        <label for="email">Via email</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" name="terms" id="agree-terms" value="" />
+        <label for="agree-terms">Agree terms?</label>
+      </div>
+      <div class="form-control-inline">
+        <input
+          type="checkbox"
+          name="contact"
+          id="contact-email"
+          value="email"
+        />
+        <label for="contact-email">Contact via email</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" name="contact" id="contact-phone" value="" />
+        <label for="contact-phone">Contact via phone</label>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
