@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Challenge Form</title>
-  </head>
-  <body>
-    <header>
-      <h1>Contact Us</h1>
-    </header>
-    <main>
-      <form class="form-container" action="" method="GET">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Challenge Form</title>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <main>
+    <form class="form-container" action="" method="GET">
+      <section>
         <h2>How can we help you?</h2>
-        <div class="input-element">
-          <label for="yourname">Your Name</label>
-          <input type="text" id="yourname" />
-        </div>
-        <div class="input-element">
-          <label for="email">Your E-mail Address</label>
-          <input type="email" id="email" />
-        </div>
-        <div class="input-element">
-          <label for="phone">Your Phone Number</label>
-          <input type="number" id="phone" />
-        </div>
-        <div class="input-element">
-          <label for="text">Your Message</label>
-          <textarea name="textarea" id="text" cols="10" rows="5"></textarea>
-        </div>
-        <div class="input-element">
-          <label for="drop">How did you find us?</label>
-          <select name="" id="drop">
-            <option value="">Web Search</option>
-            <option value="">Friend</option>
-            <option value="">None of the above</option>
-          </select>
+        <ul>
+          <li>
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username" required />
+          </li>
+          <li>
+            <label for="email">Your Name</label>
+            <input type="email" id="email" name="email" required />
+          </li>
+          <li>
+            <label for="phone">Your Name</label>
+            <input type="tel" id="phone" name="phone" required />
+          </li>
+          <li>
+            <label for="message">Your Message</label>
+            <textarea name="textarea" id="message" cols="10" rows="5"></textarea>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <label for="channel">How did you find us?</label>
+        <select name="channel" id="channel">
+          <option value="search">Web Search</option>
+          <option value="friend">Friend</option>
+          <option value="none">None of the above</option>
+        </select>
+      </section>
+      <section>
+        <h2>How should we reply?</h2>
+        <ul>
+          <li class="inline-control">
+            <input type="radio" name="reply" id="call" value="phone" required>
+            <label for="call">Call Me</label>
+          </li>
+          <li class="inline-control">
+            <input type="radio" name="reply" id="email" value="email" required>
+            <label for="email">Email</label>
+          </li>
+          <li class="inline-control">
+            <input type="radio" name="reply" id="dont" value="dont" required>
+            <label for="dont">Don't Call Me</label>
+          </li>
+      </section>
+      <section class="inline-control">
+        <input class="inline-control" type="checkbox" id="accept" required />
+        <label for="accept">Accept Terms</label>
+      </section>
+      <section id="form-buttons">
+        <button class="btn clear btn-empty" type="reset">Clear</button>
+        <button class="btn submit btn-filled" type="submit">Submit</button>
+      </section>
+    </form>
+  </main>
+</body>
 
-          <h2>How should we reply?</h2>
-          <div class="radio-section">
-            <div class="radio">
-              <label for="call">Call Me</label>
-              <input type="radio" id="call" />
-            </div>
-            <div class="radio">
-              <label for="email">Send me an email</label>
-              <input type="radio" id="email" />
-            </div>
-
-            <div class="radio">
-              <label for="dont">Dont reply</label>
-              <input type="radio" id="dont" />
-            </div>
-            <div class="radio">
-             <div> <label for="accept">Accept Terms</label> </div>
-             <div> <input type="checkbox" id="accept" required /> </div>
-            </div>
-          </div>
-        </div>
-        <div class="buttons">
-          <button class="btn clear" type="reset">Clear</button>
-          <button class="btn submit" type="submit">Submit</button>
-        </div>
-      </form>
-    </main>
-  </body>
 </html>

@@ -1,26 +1,109 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(207, 237, 248);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 254, 255);
+  font-family: sans-serif;
 }
 
 h1 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem;
+  font-size: 2.5rem;
 }
 
 form {
-    box-sizing: border-box;
-    width: 35rem;
-    margin: 2rem auto;
-    padding: 0.5rem;
-    background-color: rgb(183, 228, 241);
-    border-radius: 6px;
+  box-sizing: border-box;
+  width: 40rem;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgb(183, 228, 241);
+  border-radius: 6px;
 }
 
-input, textarea, select {
+section {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+label {
+  color: rgb(17, 17, 83);
+  display: block;
+  margin-bottom: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(194, 161, 247);
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(232, 249, 252);
+  color: darkblue;
+  border-color: darkblue;
+}
+
+.inline-control {
+  display: flex;
+}
+
+.inline-control input {
+  width: auto;
+}
+.inline-control label {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+button {
+    font: inherit;
+    border-color: 1px solid gray;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-filled {
+    background-color: rgb(68, 68, 250);
+    color: white;
+}
+
+.btn-empty {
+    background-color: transparent;
+    color: rgb(68, 68, 250);
+}
+
+.btn-filled:hover {
+    background-color: rgb(150, 150, 250);
+    border-color: royalblue;
+}
+
+.btn-empty:hover {
+    background-color: rgb(161, 183, 248);
+}
+
+#form-buttons {
+    text-align: right;
+}
+
+/* input, textarea, select {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
@@ -31,24 +114,13 @@ input, textarea, select {
     border-radius: 4px;
 }
 
-input:focus, textarea:focus {
-    background-color: lightblue;
-    color: darkblue;
-    border-color: darkblue;
-}
+
 label {
     display: block;
     margin: 0.5rem;
 }
 
-textarea {
-    resize: none;
-}
 
-/* .radio-section {
-    display: flex;
-    flex-direction: column-reverse ;
-} */
 
 .radio {
     display: flex;
@@ -80,5 +152,4 @@ margin-bottom: 1rem;
  .submit {
      background-color: darkblue;
      color: white;
- }
-
+ } */
