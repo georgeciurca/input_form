@@ -4,14 +4,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 header {
-    text-align: center;
-    color: white;
-    background-color: rgb(99, 7, 42);
-    width: 32rem;
-    margin: auto;
-    border-radius: 6px;
+  text-align: center;
+  color: white;
+  background-color: rgb(99, 7, 42);
+  width: 32rem;
+  margin: auto;
+  border-radius: 6px;
 }
 
+h2 {
+  color: rgb(99, 7, 42);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 form {
   width: 30rem;
   margin: 3rem auto;
@@ -43,6 +51,10 @@ textarea:focus {
   background-color: rgb(99, 7, 42);
   color: rgb(233, 115, 160);
   border-color: rgb(247, 2, 96);
+}
+
+textarea {
+    resize: none ;
 }
 
 button {

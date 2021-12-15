@@ -22,27 +22,27 @@
     <main>
       <form action="/" method="GET">
         <section>
-            <h2>Your Personal details</h2>
+          <h2>Your Personal details</h2>
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" required/>
             </li>
             <label for="useremail">Your email address</label>
-            <input type="email" name="user-email" id="useremail" />
+            <input type="email" name="user-email" id="useremail" required />
             <li>
               <label for="userpassword">Your password</label>
-              <input type="password" id="userpassword" name="user-password" />
+              <input type="password" id="userpassword" name="user-password" required minlength="7" />
             </li>
           </ul>
         </section>
 
         <section>
-            <h2>More details</h2>
+          <h2>More details</h2>
           <ul>
             <li>
               <label for="userage">Your Age</label>
-              <input type="number" step="1" id="userage" name="user-age" />
+              <input type="number" step="1" id="userage" name="user-age" required min="18" max="100"/>
             </li>
             <li>
               <label for="birthdate">Your birthdate</label>
@@ -88,7 +88,7 @@
         </section>
 
         <section>
-            <h2>How should we get in touch?</h2>
+          <h2>How should we get in touch?</h2>
           <ul>
             <li class="form-control-inline">
               <input
@@ -110,7 +110,7 @@
             </li>
           </ul>
         </section>
-
+        <hr />
         <section>
           <div class="form-control-inline">
             <input type="checkbox" name="terms" id="agree-terms" value="" />
